@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Javascript - Aula 04</title>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" href="style.css">
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body id="pagina">
+		<div class="container">
+			<h1>CASIO</h1>
+			<h2>basic calculator </h2>
+			<table>
+			
+				<tr>
+					<td colspan="3"><input disabled type="text" id="display" size="25"></td>
+					<td><input disabled type="text" id="display_result" size="5"></td>
+				</tr>
+				
+				<tr>
+					<td><button onclick="setDisplay(1)">1</button></td>
+					<td><button onclick="setDisplay(2)">2</button></td>
+					<td><button onclick="setDisplay(3)">3</button></td>
+					<td><button onclick="setOperador('+')">+</button></td>
+				</tr>
+
+				<tr>
+					<td><button onclick="setDisplay(4)">4</button></td>
+					<td><button onclick="setDisplay(5)">5</button></td>
+					<td><button onclick="setDisplay(6)">6</button></td>
+					<td><button onclick="setOperador('-')">-</button></td>
+				</tr>
+
+				<tr>
+					<td><button onclick="setDisplay(7)">7</button></td>
+					<td><button onclick="setDisplay(8)">8</button></td>
+					<td><button onclick="setDisplay(9)">9</button></td>
+					<td><button onclick="setOperador('*')">*</button></td>
+				</tr>
+
+				<tr>
+					<td><button onclick="setDisplay(0)">0</button></td>
+					<td><button onclick="resetDisplay()">C</button></td>
+					<td><button onclick="voltaDisplay()"><img class="img" src="excluir.png" alt="exclusao"></button></td>
+					<td><button onclick="setOperador('/')">/</button></td>
+				</tr>
+
+				<tr>
+					<td><button onclick="setOperador('(')">(</button></td>
+					<td><button onclick="setOperador(')')">)</button></td>
+					<td><button onclick="setOperador('.')">,</button></td>
+					<td><button onclick="setResultado()">=</button></td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>		
